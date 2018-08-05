@@ -30,7 +30,7 @@
     - "/home/{{user}}/.config/rclone"
 
 - name: Cleanup rclone tmp path
-  shell: rm -rf /tmp/rclone-*-linux-amd64
+  shell: rm -rf /tmp/rclone-*-linux-armd64
   args:
     warn: no
 
@@ -39,13 +39,13 @@
 
 - name: "Unarchive rclone version: {{rclone_version_tag}}"
   unarchive:
-    src: "https://downloads.rclone.org/{{ '' if rclone.version == 'latest' else rclone_version_tag + '/' }}rclone-{{ rclone_version_tag }}-linux-amd64.zip"
+    src: "https://downloads.rclone.org/{{ '' if rclone.version == 'latest' else rclone_version_tag + '/' }}rclone-{{ rclone_version_tag }}-linux-arm64.zip"
     dest: /tmp
     copy: no
     validate_certs: no
 
 - name: Find rclone tmp dir
-  shell: ls -d /tmp/rclone-*-linux-amd64
+  shell: ls -d /tmp/rclone-*-linux-arm64
   register: rclone_tmp_dir
 
 - name: Copy binary to /usr/bin/rclone
