@@ -1,4 +1,4 @@
-<!-- <br /><img src="https://raw.githubusercontent.com/Cloudbox/assets/master/images/readme/Cloudbox-logo_dark.png" width="600">
+<!--- <br /><img src="https://raw.githubusercontent.com/Cloudbox/assets/master/images/readme/Cloudbox-logo_dark.png" width="600">
 <br /><br />
 [![Website](https://img.shields.io/badge/Website-https%3A%2F%2Fcloudbox.rocks-blue.svg)](https://cloudbox.rocks)
 [![Wiki](https://img.shields.io/badge/Wiki-https%3A%2F%2Fgithub.com%2Fcloudbox%2Fcloudbox%2Fwiki-blue.svg)](https://github.com/cloudbox/cloudbox/wiki)
@@ -11,7 +11,7 @@
 [![Changelog](https://img.shields.io/badge/Changelog-CHANGELOG.md-blue.svg)](CHANGELOG.md)
 [![Contributing](https://img.shields.io/badge/Contributing-CONTRIBUTING.md-blue.svg)](CONTRIBUTING.md)
 [![Credits](https://img.shields.io/badge/Credits-CREDITS.md-blue.svg)](CREDITS.md)
---/>
+--->
 
 [![License: GPL 3](https://img.shields.io/badge/License-GPL%203-blue.svg)](LICENSE.md)
 
