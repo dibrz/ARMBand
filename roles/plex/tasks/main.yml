@@ -79,7 +79,7 @@
 - name: Create and start container
   docker_container:
     name: plex
-    image: "lsioarmhf/plex:{{plex.tag}}"
+    image: "lsioarmhf/plex" #:{{plex.tag}}
     pull: yes
     published_ports:
       - "127.0.0.1:32400:32400/tcp"
