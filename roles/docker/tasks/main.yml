@@ -58,14 +58,14 @@
     update_cache: yes
     force: yes
   when: ansible_distribution_version == "16.04"
-
-- name: Install docker-ce for 18.04
-  apt:
-    name: docker-ce=18.05.0~ce~3-0~ubuntu
-    state: present
-    update_cache: yes
-    force: yes
-  when: ansible_distribution_version == "18.04"
+  #
+  #- name: Install docker-ce for 18.04
+  #apt:
+  #  name: docker-ce=18.05.0~ce~3-0~ubuntu
+  #  state: present
+  #  update_cache: yes
+  #  force: yes
+  #when: ansible_distribution_version == "18.04"
 
 - name: Put docker-ce into hold
   dpkg_selections:
