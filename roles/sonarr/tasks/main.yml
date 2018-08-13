@@ -2,7 +2,7 @@
 # Title:         Cloudbox: Sonarr Role                                  #
 # Author(s):     L3uddz, Desimaniac                                     #
 # URL:           https://github.com/cloudbox/cloudbox                   #
-# Docker Image:  dibrz/docker-arm-suitarr                               #
+# Docker Image:  dibrz/suitarr                               #
 # --                                                                    #
 #         Part of the Cloudbox project: https://cloudbox.rocks          #
 #########################################################################
@@ -61,7 +61,7 @@
 - name: Create and start container
   docker_container:
     name: sonarr
-    image: "dibrz/docker-arm-suitarr:sonarr"
+    image: "dibrz/suitarr:sonarr"
     pull: yes
     published_ports:
       - "127.0.0.1:8989:8989"

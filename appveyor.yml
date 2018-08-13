@@ -5,7 +5,7 @@ skip_commits:
     - '*.yml.default'
     - 'roles/scripts/files/*'
 
-image: ubuntu
+image: dibrz/ubuntu-qemu:latest
 
 init:
   - sh: curl -s https://cloudbox.rocks/install_dependencies.sh | sudo -H sh

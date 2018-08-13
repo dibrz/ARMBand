@@ -2,7 +2,7 @@
 # Title:         Cloudbox: Radarr Role                                  #
 # Author(s):     L3uddz, Desimaniac                                     #
 # URL:           https://github.com/cloudbox/cloudbox                   #
-# Docker Image:  dibrz/docker-arm-suitarr                               #
+# Docker Image:  dibrz/suitarr                               #
 # --                                                                    #
 #         Part of the Cloudbox project: https://cloudbox.rocks          #
 #########################################################################
@@ -61,7 +61,7 @@
 - name: Create and start container
   docker_container:
     name: radarr
-    image: dibrz/docker-arm-suitarr:radarr
+    image: dibrz/suitarr:radarr
     pull: yes
     published_ports:
       - "127.0.0.1:7878:7878"

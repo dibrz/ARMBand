@@ -2,7 +2,7 @@
 # Title:         Cloudbox: Bazarr Role                                  #
 # Author(s):     L3uddz, Desimaniac                                     #
 # URL:           https://github.com/cloudbox/cloudbox                   #
-# Docker Image:  dibrz/docker-arm-suitarr                                        #
+# Docker Image:  dibrz/suitarr                                        #
 # --                                                                    #
 #         Part of the Cloudbox project: https://cloudbox.rocks          #
 #########################################################################
@@ -61,7 +61,7 @@
 - name: Create and start container
   docker_container:
     name: bazarr
-    image: "dibrz/docker-arm-suitarr:bazarr"
+    image: "dibrz/suitarr:bazarr"
     pull: yes
     published_ports:
       - "127.0.0.1:6767:6767"

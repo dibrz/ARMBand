@@ -38,12 +38,12 @@
 
 - name: Add official repository for 16.04
   apt_repository:
-    repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
+    repo: "deb [arch=arm64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
   when: ansible_distribution_version == "16.04"
 
 - name: Add official repository for 18.04
   apt_repository:
-    repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} edge"
+    repo: "deb [arch=arm64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} edge"
   when: ansible_distribution_version == "18.04"
 
 - name: Release docker-ce from hold
