@@ -2,7 +2,7 @@
 # Title:         Cloudbox: Nextcloud Role                               #
 # Author(s):     L3uddz                                                 #
 # URL:           https://github.com/cloudbox/cloudbox                   #
-# Docker Image:  linuxserver/nextcloud                                  #
+# Docker Image:  lsioarmhf/nextcloud-aarch64                            #
 # --                                                                    #
 #         Part of the Cloudbox project: https://cloudbox.rocks          #
 #########################################################################
@@ -40,7 +40,7 @@
 - name: Create and start mariadb container
   docker_container:
     name: mariadb
-    image: "linuxserver/mariadb"
+    image: "lsioarmhf/mariadb-aarch64"
     pull: yes
     published_ports:
       - "127.0.0.1:3306:3306"
@@ -61,7 +61,7 @@
 - name: Create and start nextcloud container
   docker_container:
     name: nextcloud
-    image: "linuxserver/nextcloud"
+    image: "lsioarmhf/nextcloud-aarch64"
     pull: yes
     published_ports:
       - "127.0.0.1:4645:443"
