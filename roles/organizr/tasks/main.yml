@@ -2,7 +2,7 @@
 # Title:         Cloudbox: Organizr Role                                #
 # Author(s):     L3uddz, Desimaniac                                     #
 # URL:           https://github.com/cloudbox/cloudbox                   #
-# Docker Image:  lsiocommunity/organizr                                 #
+# Docker Image:  llsioarmhf/organizr-aarch64                            #
 # --                                                                    #
 #         Part of the Cloudbox project: https://cloudbox.rocks          #
 #########################################################################
@@ -46,7 +46,7 @@
 - name: Create and start container
   docker_container:
     name: organizr
-    image: "lsiocommunity/organizr"
+    image: "lsioarmhf/organizr-aarch64"
     pull: yes
     published_ports:
       - "127.0.0.1:7421:80"
