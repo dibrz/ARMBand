@@ -2,7 +2,7 @@
 # Title:         Cloudbox: ruTorrent Role                               #
 # Author(s):     L3uddz, Horjulf                                        #
 # URL:           https://github.com/cloudbox/cloudbox                   #
-# Docker Image:  horjulf/rutorrent-autodl                               #
+# Docker Image:  lsioarmhf/rutorrent-aarch64                            #
 # --                                                                    #
 #         Part of the Cloudbox project: https://cloudbox.rocks          #
 #########################################################################
@@ -65,7 +65,7 @@
 - name: Create and start container
   docker_container:
     name: rutorrent
-    image: horjulf/rutorrent-autodl
+    image: lsioarmhf/rutorrent-aarch64
     pull: yes
     published_ports:
       - "127.0.0.1:3111:80"
@@ -124,7 +124,8 @@
 - name: Stop container to customize rtorrent.rc
   docker_container:
     name: rutorrent
-    image: horjulf/rutorrent-autodl
+    image: lsioarmhf/rutorrent-aarch64
+    #image: horjulf/rutorrent-autodl
     state: stopped
   when: rtorrent_rc.stat.exists == False
 
