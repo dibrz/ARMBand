@@ -2,7 +2,7 @@
 # Title:         Cloudbox: Heimdall Role                                #
 # Author(s):     Captain-NaCl, Desimaniac                               #
 # URL:           https://github.com/cloudbox/cloudbox                   #
-# Docker Image:  linuxserver/heimdall                                   #
+# Docker Image:  linuxserver/docker-heimdall-arm64                                   #
 # --                                                                    #
 #         Part of the Cloudbox project: https://cloudbox.rocks          #
 #########################################################################
@@ -47,7 +47,7 @@
 - name: Create and start container
   docker_container:
     name: heimdall
-    image: linuxserver/heimdall
+    image: linuxserver/docker-heimdall-arm64
     pull: yes
     published_ports:
       - "127.0.0.1:8078:80"
