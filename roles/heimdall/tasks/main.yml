@@ -47,7 +47,7 @@
 - name: Create and start container
   docker_container:
     name: heimdall
-    image: linuxserver/docker-heimdall-arm64
+    image: lsioarmhf/heimdall-aarch64
     pull: yes
     published_ports:
       - "127.0.0.1:8078:80"
