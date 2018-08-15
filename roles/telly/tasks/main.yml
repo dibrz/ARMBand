@@ -27,7 +27,7 @@
 - name: Create and start container
   docker_container:
     name: telly
-    image: "tombowditch/telly"
+    image: "dibrz/suitarr:telly"
     pull: yes
     volumes:
     - "/etc/localtime:/etc/localtime:ro"
