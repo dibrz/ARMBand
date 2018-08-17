@@ -15,7 +15,7 @@
 
 [![License: GPL 3](https://img.shields.io/badge/License-GPL%203-blue.svg)](LICENSE.md)
 
-Bein tested on a RockPro64. Its a work in progress. Not currenlty functional project.
+Being tested on a RockPro64. Currently in ALPHA test.
 --
 
 Cloudbox is an Ansible and Docker based solution for rapidly deploying a cloud media server.
