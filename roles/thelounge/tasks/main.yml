@@ -36,7 +36,7 @@
 - name: Create and start container
   docker_container:
     name: thelounge
-    image: "linuxserver/thelounge"
+    image: "lsioarmhf/thelounge-aarch64"
     pull: yes
     published_ports:
       - "127.0.0.1:9500:9000"

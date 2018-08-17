@@ -25,7 +25,7 @@
 - name: Create container
   docker_container:
     name: watchtower
-    image: "v2tec/watchtower"
+    image: "v2tec/watchtower:armhf-latest"
     pull: yes
     command: sonarr radarr jackett nzbhydra nzbget organizr plexpy plexrequests portainer watchtower nginx-proxy letsencrypt --cleanup --interval 15
     volumes:

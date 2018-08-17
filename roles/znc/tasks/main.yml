@@ -36,7 +36,7 @@
 - name: Create and start container
   docker_container:
     name: znc
-    image: horjulf/docker-znc
+    image: arm64v8/znc
     pull: yes
     published_ports:
       - "127.0.0.1:6501:6501"
