@@ -41,4 +41,7 @@ Featured Applications:
 
 ***
 
+Get started: 
+[wiki](https://github.com/dibrz/ARMBand/wiki)
+
 _If you find this project helpful, feel free to make a small donation via Paypal [gabrielsr@gmail.com](https://www.paypal.me/gabrielsr)
