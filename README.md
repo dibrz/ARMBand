@@ -17,6 +17,12 @@
 
 Being tested on a RockPro64. Currently in ALPHA test.
 --
+EDIT: At the moment and near future I'm living in a different setup with no TV and I don't have the intention to continue that project.  But still think that its a very viable idea. Fill free to fork the project and continue the work. If you know the basics about docker you are good to go. Ansible is very straightforward to work with.  The process here is basically migrating roles by finding an existing arm64 compatible container of each service or eventually creating your own. I didn't document the process but you can take a look at my commits and that could be a guide on how to proceed. 
+
+https://github.com/dibrz/ARMBand/commits/master
+
+-- 
+
 
 Cloudbox is an Ansible and Docker based solution for rapidly deploying a cloud media server.
 
